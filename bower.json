@@ -1,0 +1,22 @@
+{
+  "name": "library",
+  "description": "Pluralsight Express and NodeJS Course",
+  "main": "index.js",
+  "authors": [
+    "Alan Fidelino"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/afide26/pluralsight-nodejs-express",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
