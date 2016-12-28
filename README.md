@@ -4,6 +4,7 @@
 1. Express
 2. Bower
 3. Gulp
+    a. Use of JSHint and JSCS for code standards and style checking
 4. Routing
 5. Controllers
 6. Bootstrap Project Integration
