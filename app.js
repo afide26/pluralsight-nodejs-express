@@ -12,6 +12,7 @@ var nav = [
 // ROUTERS
 var bookRouter = require(__dirname + '/src/views/routes/bookRoutes.js')(nav);
 var authRouter = require(__dirname + '/src/views/routes/authRoutes.js');
+var adminRouter = require(__dirname + '/src/views/routes/adminRoutes.js')(nav);
 
 app.use(express.static(__dirname + '/public'));
 // app.use(express.static(__dirname + '/src/views'));
@@ -22,7 +23,7 @@ app.get('/', function(req, res){
     res.render('index',{
       title:'Hello from Index',
       nav: nav
-    })
+    });
 });
 
 
@@ -32,6 +33,8 @@ app.get('/', function(req, res){
 app.use('/Books', bookRouter);
 // AUTHOR ROUTES
 app.use('/Authors', authRouter);
+// ADMIN ROUTES
+app.use('/Admin', adminRouter);
 
 
 // Make the app listen to a port
